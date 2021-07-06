@@ -16,5 +16,13 @@ Notes:
 
 
 def last(a, n):
-    # Your code here
+    length_of_list = len(a)
 
+    start_of_slice = length_of_list - n
+
+    output = a[start_of_slice: length_of_list]
+
+    return output
+
+
+print(last([1, 2, 3, 4, 5], 1))
