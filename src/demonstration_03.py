@@ -16,4 +16,13 @@ Notes:
 
 def multiply_nums(nums):
     # Your code here
+    char_nums = my_string.split(', ')
+    result = 1
+    for char_num in char_nums:
+        num = int(char_num)
+        result = result * num
+    return result
 
+
+my_string = "1, 2, 3, 4"
+print(multiply_nums(my_string))
