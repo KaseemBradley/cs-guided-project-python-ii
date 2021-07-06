@@ -17,4 +17,13 @@ Notes:
 
 def add_indexes(numbers):
     # Your code here
+    # list comprehension
+    return [i + numbers[i] for i in range(len(numbers))]
 
+    # for i in range(len(numbers)):
+    #     numbers[i] = numbers[i] + i
+    # return numbers
+
+
+my_list = [1, 2, 3, 4, 5]
+print(add_indexes(my_list))
